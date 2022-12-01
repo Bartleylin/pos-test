@@ -3,7 +3,9 @@
 html, body {
     scroll-behavior: smooth;
 }
-
+body::-webkit-scrollbar {
+    display: none;
+}
 
 *,
 *::before,
@@ -11,9 +13,6 @@ html, body {
  box-sizing: border-box;
 }
 
-body{
-    white-space:pre;
-}
 
 
 .fs-1{
@@ -123,6 +122,10 @@ body{
     }
 }
 
+.fs-7{
+    font-size: 1.5rem !important;
+}
+
 
 
 
@@ -168,6 +171,9 @@ body{
 
 .text-color1{
     color: #000000;
+}
+.text-color2{
+    color: #ED7550;
 }
 
 .index-space1{
@@ -287,6 +293,20 @@ body{
             border-radius: 12px;
         }
     }
+    @media (min-width: 1200px){
+        &::before{
+            content:"";
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 11px;
+            left: 8px;
+            background-color:  #F5F5F4;
+            width: calc(100% - 16px);
+            height: 10px;
+            border-radius: 12px;
+        }
+    }
 }
 
 
@@ -327,13 +347,31 @@ body{
             border-radius: 12px;
         }
     }
+    @media (min-width: 1200px){
+        background-color: #F5F5F4;
+        border-radius: 12px;
+        color: black;
+        text-decoration:none;
+        position: relative;
+        &::before{
+            content:"";
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: -20px;
+            background-color:  #ED7550;
+            width: 100%;
+            height: 10px;
+            border-radius: 8px;
+        }
+    }
 }
 
 .active2{
     @media (min-width: 315px){
         background-color: #ED7550 !important;
         border-radius: 6px;
-        color: white;
+        color: white !important;
         text-decoration:none;
     }
 }
@@ -377,6 +415,11 @@ body{
         border: 0;
         border-radius: 12px;
     }
+    @media (min-width: 768px){
+        background-color: #F5F5F4;
+        border: 0;
+        border-radius: 8px;
+    }
 }
 
 .nav {
@@ -390,6 +433,7 @@ body{
 .nav::-webkit-scrollbar {
     display: none;
 }
+
 
 .card{
     @media (min-width: 315px){
@@ -470,24 +514,22 @@ body{
 .go-back{
     @media (min-width: 315px){
         position: absolute;
-        right: 3%;
+        left: 3%;
         top: 50%;
         width: 8%;
-        color: #ED7550;
     }
     @media (min-width: 576px){
         position: absolute;
-        right: 3%;
+        left: 3%;
         top: 50%;
         width: 5%;
-        color: #ED7550;
     }
 }
 
 
 
 .detail-page-line{
-    border: 1px solid #CCCCCC;
+    border: 0.5px solid #CCCCCC;
     width: 100%;
 }
 
@@ -618,7 +660,6 @@ body{
         color: #011A2C;
         width: calc(50% - 16px);
     }
-
 }
 .btn-add{
     @media (min-width: 315px){
@@ -635,8 +676,17 @@ body{
         color: white;
         width: calc(50% - 16px);
         }
+    @media (min-width: 1200px){
+        background-color: #ED7550;
+        border-radius: 8px;
+        border: none;
+        color: white;
+        width: calc(50% - 16px);
+        }   
 }
-
+.detail-btn a{
+    text-decoration: none !important;
+}
 .detail{
     @media (min-width: 315px){
         background-color: white;
@@ -645,6 +695,10 @@ body{
     @media (min-width: 315px){
         background-color: white;
         border-radius: 12px;
+        }
+    @media (min-width: 1200px){
+        background-color: white;
+        border-radius: 8px;
         }
 }
 .detail-none{
@@ -673,7 +727,15 @@ body{
         border: none;
         color: white;
         }
+    @media (min-width: 1200px){
+        background-color: #ED7550;
+        border-radius: 8px;
+        border: none;
+        color: white;
+        }
 }
+
+
 .pay-btn{
     @media (min-width: 315px){
         background-color: #F16C5D;
@@ -688,7 +750,7 @@ body{
         color: white;
         }
 }
-.detail-btn a{
+.fs-5-btn a{
     text-decoration: none;
 }
 
@@ -716,9 +778,15 @@ body{
     @media (min-width: 768px){
         background-color: white;
         width: 100%;
-        height: 600px;
+        height: 521px;
         overflow: auto;
-        }  
+        }
+    @media (min-width: 992px){
+        background-color: white;
+        width: 100%;
+        height: calc(100vh - 470px);
+        overflow: auto;
+        }
 }
 
 
@@ -726,12 +794,8 @@ body{
 .detail-summary-content{
     width: 70%;
     overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;  // 控制多行的行數
-    -webkit-box-orient: vertical;
 }
-.detail-summary a{
+.detail-summary button{
     @media (min-width: 315px){
         background-color: white;
         border: none;
@@ -743,13 +807,7 @@ body{
         border: none;
         width: 40px;
         height: 40px;
-        } 
-    @media (min-width: 1080px){
-        background-color: white;
-        border: none;
-        width: 48px;
-        height: 48px;
-        } 
+        }
 }
 
 .cancel-btn{
@@ -940,6 +998,12 @@ body{
         border: none;
         width: calc(50% - 16px);
     }
+    @media (min-width: 1200px){
+        background-color: #F2F2F1;
+        border-radius: 8px;
+        border: none;
+        width: calc(50% - 16px);
+    }
 }
 .payment-back{
     @media (min-width: 315px){
@@ -952,6 +1016,13 @@ body{
     @media (min-width: 768px){
         background-color: #ED7550;
         border-radius: 12px;
+        border: none;
+        color: white;
+        width: calc(50% - 16px);
+    }
+    @media (min-width: 1200px){
+        background-color: #ED7550;
+        border-radius: 8px;
         border: none;
         color: white;
         width: calc(50% - 16px);
@@ -996,6 +1067,11 @@ body{
         background-color: white;
         border-radius: 10px;
         border: 20px solid #F2A54C;
+    }
+    @media (min-width: 1200px){
+        background-color: white;
+        border-radius: 8px;
+        border: 0px solid #F2A54C;
     }
 }
 .total-amount-content-tittle{
@@ -1389,30 +1465,12 @@ body{
 }
 
 .bottom-btn-bg{
-    @media (min-width: 315px){
-        position: fixed;
-        bottom: 0;
-        display: block;
-        background-color:white;
-        height: 12%;
-        width: 100%;
-    }
-    @media (min-width: 768px){
-        position: fixed;
-        bottom: 0;
-        display: block;
-        background-color:white;
-        height: 7%;
-        width: 100%;
-    }
-    @media (min-width: 1200px){
-        position: fixed;
-        bottom: 0;
-        display: block;
-        background-color:white;
-        height: 5%;
-        width: 100%;
-    }
+    position: fixed;
+    bottom: 0;
+    display: block;
+    background-color:white;
+    height: 12%;
+    width: 100%;
 }
 
 
@@ -1522,10 +1580,10 @@ body{
     min-height: 100vh;
 }
 
-
 .btn-close-new{
     border: none;
     background-color: white;
+    text-decoration: none;
 }
 
 .btn-close-new img{
@@ -1534,6 +1592,93 @@ body{
     }
     @media (min-width: 768px){
         width: 20%;
+    }
+}
+
+.pos-btn{
+    @media (min-width: 992px){
+        background-color: white;
+        border-radius: 8px;
+        border: none;
+        color: #707070;
+        text-decoration: none;
+        width: calc(50% - 8px);
+    }
+}
+.pos-btn2 {
+    @media (min-width: 992px){
+        background-color: white;
+        border-radius: 8px;
+        border: none;
+        color: #707070;
+        text-decoration: none;
+        width: calc(33% - 8px);
+    }
+}
+
+.order-area-pos{
+    height:calc(100vh - 70px);
+}
+.order-area-pos2{
+    height:calc(100vh - 177px);
+}
+
+.menu-bar a{
+    color: #707070;
+}
+
+.menu-bar-logo{
+    width: 40%;
+}
+
+.pos-member{
+    background-color: #6E6E6E;
+}
+
+.bg-pos-title{
+    background-color: #F2A539;
+    border-radius: 8px 8px 0px 0px;
+}
+.bg-pos-pay{
+    background-color: #252525;
+    color : white;
+}
+
+.btn-check:active .btn-outline-primary, .btn-check:checked + .btn-outline-primary, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show, .btn-outline-primary:active {
+    color: #fff;
+    background-color: #ED7550;
+    border-color: #ED7550;
+}
+.btn-outline-primary {
+    color: #ED7550;
+    border-color: #ED7550;
+}
+
+.credit-card-pos{
+    @media (min-width: 1200px){
+        width: 100%;
+        background-color: white;
+        border: none;
+        border-radius: 8px;
+        position: relative;
+    }
+}
+.cash-pos{
+    @media (min-width: 1200px){
+        width: 100%;
+        background-color: white;
+        border: none;
+        border-radius: 8px;
+        position: relative;
+    }
+}
+.Anther-Payment-pos{
+    @media (min-width: 1200px){
+        width: 100%;
+        background-color: white;
+        border: none;
+        border-radius: 8px;
+        position: relative;
     }
 }
 
