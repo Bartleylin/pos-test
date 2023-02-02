@@ -3,7 +3,9 @@
 html, body {
     scroll-behavior: smooth;
 }
-
+body::-webkit-scrollbar {
+    display: none;
+}
 
 *,
 *::before,
@@ -216,8 +218,9 @@ html, body {
 }
 
 .order-area{
-    height: 100vh;
+    height: calc(100vh - 295px);
 }
+
 .order-fix{
     position: sticky;
     top: 0;
