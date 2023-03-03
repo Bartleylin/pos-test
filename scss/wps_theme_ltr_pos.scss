@@ -13,6 +13,7 @@ body::-webkit-scrollbar {
  box-sizing: border-box;
 }
 
+
 .fs-1{
     @media (min-width: 315px){
       font-size: 1.375rem!important;
@@ -138,6 +139,11 @@ body::-webkit-scrollbar {
     background-color: white;
     border-radius: 10px;
 }
+.banner img{
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
 
 .eat-in{
     @media (min-width: 315px){
@@ -218,13 +224,13 @@ body::-webkit-scrollbar {
 }
 
 .order-area{
-    height: calc(100vh - 295px);
+    height: calc(100vh - 365px);
 }
 
 .order-fix{
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: -5;
 }
 .order-fix2{
     position: sticky;
@@ -443,6 +449,7 @@ body::-webkit-scrollbar {
     }
 }
 
+
 .order-card a{
     color: #011A2C;
     text-decoration:none;
@@ -601,6 +608,90 @@ body::-webkit-scrollbar {
     border-color: #ED7550;
 }
 
+.customization-flex-gap{
+    @media (min-width: 350px){
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    @media (min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+}
+
+.customization-flex-gap a{
+    text-decoration: none;
+}
+
+.customization-btn{
+    @media (min-width: 350px){
+        background-color: #F2F2F1;
+        border-radius: 8px;
+        border: none;
+        color: #011A2C;
+        position: relative;
+        width: calc(32% - 0.2rem);
+    }
+    @media (min-width: 768px){
+        background-color: #F2F2F1;
+        border-radius: 12px;
+        border: none;
+        color: #011A2C;
+        position: relative;
+        width: calc(25% - 1.2rem);
+    }
+}
+
+.customization-btn-active {
+    @media (min-width: 350px){
+        background-color: #ED7550;
+        border-radius: 8px;
+        border: none;
+        color: white;
+        width: calc(32% - 0.2rem);
+    }
+    @media (min-width: 768px){
+        background-color: #ED7550;
+        border-radius: 12px;
+        border: none;
+        color: white;
+        width: calc(25% - 1.2rem);
+    }
+}
+
+.customization-btn .sold-out{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #404040;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    @media (min-width: 350px){
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #404040;
+        opacity: 0.9;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+    }
+    @media (min-width: 768px){
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #404040;
+        opacity: 0.9;
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+    }
+}
+
 .btn-more{
     @media (min-width: 315px){
         background-color: #F2F2F1;
@@ -714,15 +805,9 @@ body::-webkit-scrollbar {
     @media (min-width: 768px){
         background-color: white;
         width: 100%;
-        height: 1000px;
+        height: 1193px;
         overflow: auto;
         } 
-    @media (min-width: 992px){
-        background-color: white;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        }  
 }
 
 
@@ -1341,7 +1426,7 @@ body::-webkit-scrollbar {
 }
 
 .modal-backdrop{
-    z-index: -5;
+    z-index: 0;
 }
 
 .phone-order .customization-edit{
@@ -1543,4 +1628,95 @@ body::-webkit-scrollbar {
 
 .cheak-btn{
     background-color: #F2A539;
+}
+
+.img-fit{
+    object-fit: cover
+}
+
+.table-number-content{
+    @media (min-width: 315px){
+        background-color: white;
+        border-radius: 0px 0px 6px 6px;
+        border: 6px solid #F2A54C;
+        max-height: 600px;
+        overflow-y: auto;
+    }
+    @media (min-width: 576px){
+        background-color: white;
+        border-radius: 0px 0px 8px 8px;
+        border: 10px solid #F2A54C;
+        max-height: 800px;
+        overflow-y: auto;
+    }
+    @media (min-width: 768px){
+        background-color: white;
+        border-radius: 0px 0px 10px 10px;
+        border: 20px solid #F2A54C;
+        max-height: 1100px;
+        overflow-y: auto;
+    }
+}
+
+.tablte-number-title{
+    border-radius: 6px 6px 0px 0px;
+    @media (min-width: 576px){
+        border-radius: 8px 8px 0px 0px;
+    }
+    @media (min-width: 768px){
+        border-radius: 10px 10px 0px 0px;
+    }
+}
+
+.card img{
+    object-fit: cover;
+    width: 100%;
+    height: 208px;
+}
+
+
+
+
+.cal-gap {
+    @media (min-width: 315px){
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}
+
+.cal-btn{
+    @media (min-width: 768px){
+        background-color: #F2F2F1;
+        border-radius: 12px;
+        border: none;
+        color: #011A2C;
+        position: relative;
+        width: 30%;
+        min-height: 80px;
+    }
+}
+.cal-btn2{
+    @media (min-width: 768px){
+        background-color: #F2F2F1;
+        border-radius: 12px;
+        border: none;
+        color: #011A2C;
+        position: relative;
+        width: 64%;
+        min-height: 80px;
+    }
+}
+
+.cal-btns a:active{
+    @media (min-width: 768px){
+        background-color: #ED7550;
+        border-radius: 12px;
+        border: none;
+        color: white;
+    }
+}
+.cal-btns a{
+    text-decoration: none;
+    color: #011A2C;
 }
