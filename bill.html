@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/wps_theme_ltr_pos.css">
+</head>
+<body>
+<div class="bg">
+<div class="index-space2"></div>
+ <div class="container align-items-center">
+    <div class="row justify-content-between px-0">
+        <a class="col-6 py-3 px-1 p-sm-3 text-decoration-none">
+            <div class="eat-in p-1 p-sm-3 d-flex flex-column align-items-center">
+                <img class="w-75 img-fluid py-3" src="image/index-img/receipt.png">
+                <p class="fs-1 mb-0 text-color1">列印發票</p>
+                <p class="fs-2 mb-0 text-secondary">Uniform Invoice</p>
+            </div>
+        </a>
+        <a class="col-6 py-3 px-1 p-sm-3 text-decoration-none" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+            <div class="eat-in p-1 p-sm-3 d-flex flex-column align-items-center">
+                <img class="w-75 img-fluid py-3" src="image/index-img/e-invoice.png">
+                <p class="fs-1 mb-0 text-color1">掃描載具</p>
+                <p class="fs-2 mb-0 text-secondary">E-Invoice</p>
+            </div>
+        </a>
+        <a class="col-12 py-3 px-1 p-sm-3 text-decoration-none" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+            <div class="eat-in p-1 p-sm-3 d-flex flex-column align-items-center">
+                <p class="fs-1 mb-0 text-color1">統一編號</p>
+                <p class="fs-2 mb-0 text-secondary">Uniform numbers</p>
+            </div>
+        </a>
+    </div>
+    <div class="row justify-content-center py-3">
+        <div class="col-9">
+            <div class="cash-with-order p-3 d-flex justify-content-center">
+                <p class="fs-2 mb-0 text-color1">60秒後自動列印發票</p>
+            </div>
+        </div>
+    </div>
+ </div>
+<div class="index-space1"></div>
+</div>
+
+<!--掃描載具-->
+<div class="modal fade phone-coupon-popup" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal d-flex align-items-center justify-content-center">
+        <div class="bg-white rounded w-50">
+            <div class="modal-content p-4 d-flex align-items-center justify-content-center">
+                <p class="modal-title fs-2 fw-bold" id="exampleModalLabel">請掃描載具<p>
+                <div class="d-flex align-items-center justify-content-center" style="height: 475px;">
+                    <img class="w-75" src="image/index-img/scanner.png"">
+                </div>
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <button type="button" class="popup-cancel" data-bs-dismiss="modal">
+                        <p class="fs-3 mb-0 text-secondary py-3">取消</p>
+                    </button>
+                    <button type="button" class="popup-enter" onclick="location.href=''">
+                        <p class="fs-3 mb-0 py-3">確認</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--統一編號-->
+<div class="modal fade phone-coupon-popup" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+    <div class="modal-dialog modal d-flex align-items-center justify-content-center">
+        <div class="bg-white rounded w-50 d-flex align-items-center justify-content-center">
+            <div class="modal-content p-4 d-flex align-items-center justify-content-center">
+                <p class="modal-title fs-2 fw-bold" id="exampleModalLabel">請輸入統一編號<p>
+                <div class="input-group mb-3">
+                    <input type="text" style:"text-align:center" class="form-control fs-3 text-secondary p-3" placeholder="">
+                </div>
+                <div class="row w-100 mb-4 align-items-center">
+                    <div class="col-12 px-0">
+                        <div class="d-flex cal-gap cal-btns">
+                            <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                <p class="fs-3 mb-0 text-nowrap">
+                                    7
+                                </p>
+                            </a>
+                            <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                <p class="fs-3 mb-0 text-nowrap">
+                                    8
+                                </p>
+                            </a>
+                            <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                <p class="fs-3 mb-0 text-nowrap">
+                                    9
+                                </p>
+                            </a>
+                            <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                <p class="fs-3 mb-0 text-nowrap">
+                                    4
+                                </p>
+                            </a>
+                            <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                <p class="fs-3 mb-0 text-nowrap">
+                                    5
+                                </p>
+                            </a>
+                            <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                <p class="fs-3 mb-0 text-nowrap">
+                                    6
+                                </p>
+                            </a>
+                            <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                <p class="fs-3 mb-0 text-nowrap">
+                                    1
+                                </p>
+                            </a>
+                            <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                <p class="fs-3 mb-0 text-nowrap">
+                                    2
+                                </p>
+                            </a>
+                            <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                <p class="fs-3 mb-0 text-nowrap">
+                                    3
+                                </p>
+                            </a>
+                            <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                <p class="fs-3 mb-0 text-nowrap">
+                                    C
+                                </p>
+                            </a>
+                            <a class="cal-btn2 d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                <p class="fs-3 mb-0 text-nowrap">
+                                    0
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <button type="button" class="popup-cancel" data-bs-dismiss="modal">
+                        <p class="fs-3 mb-0 text-secondary py-3">取消</p>
+                    </button>
+                    <button type="button" class="popup-enter" onclick="location.href=''">
+                        <p class="fs-3 mb-0 py-3">確認</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
