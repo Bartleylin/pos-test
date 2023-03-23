@@ -10509,7 +10509,7 @@ body::-webkit-scrollbar {
 .bg {
   background-image: url("../image/index-img/background-img.jpg");
   background-size: cover;
-  min-height: 100vh;
+  height: 100vh;
   background-repeat: no-repeat;
 }
 
@@ -10556,6 +10556,10 @@ body::-webkit-scrollbar {
 
 .text-color1 {
   color: #000000;
+}
+
+.text-color2 {
+  color: #ED7550;
 }
 
 @media (min-width: 315px) {
@@ -11000,7 +11004,7 @@ body::-webkit-scrollbar {
 
 .form-check-inline {
   display: inline-block;
-  margin-right: 5px;
+  margin-right: 0px;
 }
 
 .form-check {
@@ -11581,6 +11585,33 @@ body::-webkit-scrollbar {
 
 .total-amount-content-tittle {
   background-color: #F2A54C;
+  color: white;
+}
+
+@media (min-width: 315px) {
+  .pay-amount-content {
+    background-color: white;
+    border-radius: 6px;
+    border: 6px solid #ED7550;
+  }
+}
+@media (min-width: 576px) {
+  .pay-amount-content {
+    background-color: white;
+    border-radius: 8px;
+    border: 10px solid #ED7550;
+  }
+}
+@media (min-width: 768px) {
+  .pay-amount-content {
+    background-color: white;
+    border-radius: 10px;
+    border: 20px solid #ED7550;
+  }
+}
+
+.pay-amount-content-tittle {
+  background-color: #ED7550;
   color: white;
 }
 
@@ -12285,4 +12316,8 @@ body::-webkit-scrollbar {
 .cal-btns a {
   text-decoration: none;
   color: #011A2C;
+}
+
+.payment-content {
+  min-height: 70vh;
 }/*# sourceMappingURL=wps_theme_ltr_pos.css.map */
