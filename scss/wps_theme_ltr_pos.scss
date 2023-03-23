@@ -1750,3 +1750,8 @@ body::-webkit-scrollbar {
 .payment-content{
     min-height: 70vh;
 }
+
+.hide-scrollbarx {
+    overflow-y: auto;
+    overflow-x: hidden;
+}

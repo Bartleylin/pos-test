@@ -12320,4 +12320,9 @@ body::-webkit-scrollbar {
 
 .payment-content {
   min-height: 70vh;
+}
+
+.hide-scrollbarx {
+  overflow-y: auto;
+  overflow-x: hidden;
 }/*# sourceMappingURL=wps_theme_ltr_pos.css.map */
