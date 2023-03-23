@@ -12325,8 +12325,4 @@ body::-webkit-scrollbar {
 .hide-scrollbarx {
   overflow-y: auto;
   overflow-x: hidden;
-}
-
-::-webkit-scrollbar {
-  display: none;
 }/*# sourceMappingURL=wps_theme_ltr_pos.css.map */
