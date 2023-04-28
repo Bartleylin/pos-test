@@ -176,3 +176,12 @@ body::-webkit-scrollbar {
         height: 50px;
     }
 }
+
+.support-btn{
+    img{
+        max-width: 50px;
+        @media (max-width: 576px){
+            max-width: 40px;
+        }
+    }
+}

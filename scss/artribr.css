@@ -10565,4 +10565,13 @@ body::-webkit-scrollbar {
   .project-line {
     height: 50px;
   }
+}
+
+.support-btn img {
+  max-width: 50px;
+}
+@media (max-width: 576px) {
+  .support-btn img {
+    max-width: 40px;
+  }
 }/*# sourceMappingURL=artribr.css.map */
