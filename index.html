@@ -4,72 +4,341 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="scss/wps_theme_ltr_pos.css">
+    <title>Artribr</title>
+    <link rel="stylesheet" href="scss/artribr.css">
 </head>
 <body>
-<div class="bg">
-<div class="index-space2"></div>
- <div class="container align-items-center">
-    <div class="row justify-content-center align-items-center">
-        <div class="col-4 logo-bg d-flex justify-content-center align-items-center">
-            <img class="w-75 img-fluid py-3" src="image/index-img/index-logo.png">
+    <!--menu-bar-->
+    <div class="header shadow-sm bg-white sticky-top">
+        <div class="container">
+         <nav class="navbar navbar-expand-xxl navbar-expand-lg id="navbar-example2" class="navbar navbar-light bg-light flex-column p-3"">
+               <a class="navbar-brand" href="index.html">
+                   <img class="py-md-1 w-25" src="image/logo-main (1).svg">
+               </a>
+           </nav>
+        </div> 
+    </div>
+    <!--index-->
+    <div class="container page-height d-flex align-items-center py-5">
+        <div class="row d-flex align-items-center">
+            <div class="col-4 d-flex flex-column align-items-center">
+                <p class="fs-1 mb-0 fw-bold">Opening</p>
+            </div>
+            <div class="col-4 d-flex flex-column align-items-center">
+                <p class="mb-0">2018</p>
+                <div style="width: 1.5px; height: 50px;" class="bg-dark"></div>
+                <img class="w-100 my-3" src="image/logo-main (1).svg">
+                <div style="width: 1.5px; height: 50px;" class="bg-dark"></div>
+                <p class="mb-0">Now</p>
+            </div>   
+            <div class="col-4 d-flex align-items-center">
+                <p class="fs-5 mb-0 ms-3">讓不起眼的角落，享有科技的照耀</p>
+            </div>     
         </div>
     </div>
-    <div class="index-space3"></div>
-    <div class="row justify-content-between px-0">
-        <div class="col-6 py-3 px-1 p-sm-3">
-                <button class="eat-in p-1 p-sm-3">
-                    <img class="w-75 img-fluid py-3" src="image/index-img/eat-in.jpg">
-                    <p class="fs-1 mb-0 text-color1">內用</p>
-                    <p class="fs-2 mb-0 text-secondary">Eat in</p>
-                </button>
+    <!--about-us-->
+    <div class="container my-5">
+        <div class="row d-flex align-items-center justify-content-evenly">
+            <div class="col-5">
+                <p class="fs-1 mb-3 fw-bold">About Us</p>
+                <img class="w-100 mb-3 mb-md-5" src="image/artribr-equation.svg">
+                <p class="fs-5 mb-0">不管你來自何方、什麼身份、我們都是同一聚落的人，互相幫助、貢獻、連結、成為創造頂尖服務與產品的群聚。</p>
+            </div>
+            <div class="col-5">
+                <p class="fs-5 mb-2">致力於創造歷久不衰的百年企業，讓企業不再害怕競爭、追求頂尖。</p>
+                <p class="fs-5 mb-4">We devote to bring up a business that lasts 100 years.</p>
+                <p class="fs-5 mb-2">我們的使命是透過科技提供頂尖的產品與服務，讓企業輕鬆地與時俱進。</p>
+                <p class="fs-5 mb-4">Our mission is to help business easily stay current with technology for better product and service.</p>
+            </div>
         </div>
-        <div class="col-6 py-3 px-1 p-sm-3">
-                <button class="eat-in p-1 p-sm-3" >
-                    <img class="w-75 img-fluid py-3" src="image/index-img/take-out.jpg">
-                    <p class="fs-1 mb-0 text-color1">外帶</p>
-                    <p class="fs-2 mb-0 text-secondary">Take Out</p>
-                </button>
+    </div>
+    <!--project-->
+    <div class="container my-5">
+        <div class="d-flex justify-content-center align-items-center mb-3 mb-mb-5">
+            <img class="me-3" style="max-height: 50px;" src="image/logo-only.svg">
+            <p class="fs-1 mb-0">成功案例</p>
         </div>
-        <div class="col-12 py-3 px-1 p-sm-3">
-            <button class="eat-in p-1 p-sm-3 d-flex flex-row-reverse align-items-center justify-content-around">
-                <img class="w-25 img-fluid py-3" src="image/index-img/deliver.svg">
-                <div class="delivery-text d-flex flex-column">
-                    <p class="fs-1 mb-0 text-color1">外送</p>
-                    <p class="fs-2 mb-0 text-secondary">Delivery</p>
+        <div class="row g-3 mb-3">
+            <div class="col-6 col-md-4">
+                <div class="cooperate-1 d-flex flex-column align-items-center justify-content-center py-3">
+                    <p class="fs-5 text-center mb-2">華信航空</p>
+                    <p class="fs-4 text-center mb-0">旅客自助報到系統</p>
                 </div>
-            </button>
-        </div>
-    </div>
-    <div class="index-space3"></div>
-    <div class="row">
-        <div class="col-12 px-1 p-sm-3">
-            <button class="order-online d-flex justify-content-between align-items-center px-2 px-md-5" onclick="location.href='order-page2.html'">
-                <div class="d-flex flex-row align-items-center">
-                    <img class="w-20 img-fluid me-0 me-sm-3 p-2 p-sm-3" src="image/index-img/order-online-icon.svg">
-                    <div class="order-online-text d-flex flex-column">
-                        <p class="fs-2 mb-0 text-start text-color1 text-nowrap">線上點餐 Qrcode</p>
-                        <p class="fs-3 mb-0 text-secondary text-start text-nowrap">Order Online Qrcode</p>
-                    </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="cooperate-1 d-flex flex-column align-items-center justify-content-center py-3">
+                    <p class="fs-5 text-center mb-2">廣達電腦</p>
+                    <p class="fs-4 text-center mb-0">廣達 PDC 專案</p>
                 </div>
-                <img class="w-25 img-fluid p-2 p-sm-3" src="image/index-img/order-online-qrcode.svg">
-            </button>
-        </div>
-    </div>
-    <div class="row justify-content-center py-3">
-        <div class="col-8 col-md-6">
-                <button class="cash-with-order py-2 p-sm-3" onclick="location.href='phone-payment.html'">
-                <div class="order-online-text">
-                    <p class="fs-2 mb-0 text-color1">線上訂單付款</p>
-                    <p class="fs-3 mb-0 text-secondary">Cash With Order</p>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="cooperate-1 d-flex flex-column align-items-center justify-content-center py-3">
+                    <p class="fs-5 text-center mb-2">中華民國電梯協會</p>
+                    <p class="fs-4 text-center mb-0">昇降設備 APP</p>
                 </div>
-                </button>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="cooperate-1 d-flex flex-column align-items-center justify-content-center py-3">
+                    <p class="fs-5 text-center mb-2">中華民國電梯協會</p>
+                    <p class="fs-4 text-center mb-0">行動管理 Winner Catchr</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="cooperate-1 d-flex flex-column align-items-center justify-content-center py-3">
+                    <p class="fs-5 text-center mb-2">佳葵農產品有限公司</p>
+                    <p class="fs-4 text-center mb-0">Winner ERP</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="cooperate-1 d-flex flex-column align-items-center justify-content-center py-3">
+                    <p class="fs-5 text-center mb-2">宥博企業 Unicombo</p>
+                    <p class="fs-4 text-center mb-0">Winner ERP</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="cooperate-1 d-flex flex-column align-items-center justify-content-center py-3">
+                    <p class="fs-5 text-center mb-2">全富數位</p>
+                    <p class="fs-4 text-center mb-0">淘妹交友 APP</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="cooperate-1 d-flex flex-column align-items-center justify-content-center py-3">
+                    <p class="fs-5 text-center mb-2">全富數位</p>
+                    <p class="fs-4 text-center mb-0">星座好朋友 APP</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="cooperate-1 d-flex flex-column align-items-center justify-content-center py-3">
+                    <p class="fs-5 text-center mb-2">新北果菜運銷</p>
+                    <p class="fs-4 text-center mb-0">理貨 APP 建置案</p>
+                </div>
+            </div>
+        </div>
+        <div class="row g-3">
+            <div class="col-6 col-md-4">
+                <div class="cooperate-2 d-flex flex-column align-items-center justify-content-center py-3">
+                    <p class="fs-5 mb-2">桃園市政府</p>
+                    <p class="fs-4 mb-0">昇降設備 APP</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="cooperate-2 d-flex flex-column align-items-center justify-content-center py-3">
+                    <p class="fs-5 mb-2">桃園市政府</p>
+                    <p class="fs-4 mb-0">智能路燈 APP</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="cooperate-2 d-flex flex-column align-items-center justify-content-center py-3">
+                    <p class="fs-5 mb-2">新北市災害中心</p>
+                    <p class="fs-4 mb-0">行動 EMIS APP</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="cooperate-2 d-flex flex-column align-items-center justify-content-center py-3">
+                    <p class="fs-5 mb-2">新北市消防局</p>
+                    <p class="fs-4 mb-0">119 APP</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="cooperate-2 d-flex flex-column align-items-center justify-content-center py-3">
+                    <p class="fs-5 mb-2">臺中市政府</p>
+                    <p class="fs-4 mb-0">人力資源網</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="cooperate-2 d-flex flex-column align-items-center justify-content-center py-3">
+                    <p class="fs-5 mb-2">內政部營建署</p>
+                    <p class="fs-4 mb-0">設備檢查 APP</p>
+                </div>
+            </div>
         </div>
     </div>
- </div>
-<div class="index-space1"></div>
-</div>
+    <!--Partner1-->
+    <div class="container my-5">
+        <div class="row d-flex align-items-center">
+            <div class="col-5">
+                <p class="fs-1 mb-3">戰略夥伴</p>
+                <img class="w-75 mb-3" src="image/cfd-logo.svg">
+                <p class="fs-5">技術與管理顧問，在合作上，我們提供專業的技術能力和團隊管理，讓技術形成服務體驗，產出最完善的產品。</p>
+            </div>
+            <div class="col-2 d-flex flex-column justify-content-center align-items-center">
+                <p class="mb-0">2019</p>
+                <div style="width: 1.5px;" class="bg-dark Partner-line"></div>
+                <p class="mb-0">Now</p>
+            </div>
+            <div class="col-5 d-flex align-items-center justify-content-evenly">
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <img class="w-100 mb-3 p-1 p-md-3" src="image/cfd-project-1.png">
+                    <p class="fs-5 text-center w-100">交友APP</p>
+                </div>
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <img class="w-100 mb-3 p-1 p-md-3" src="image/cfd-project-2.png">
+                    <p class="fs-5 text-center t w-100">星座APP</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Partner2-->
+    <div class="container my-5">
+        <div class="row d-flex align-items-center">
+            <div class="col-5">
+                <p class="fs-1 mb-3">戰略夥伴</p>
+                <img class="w-75 mb-3" src="image/e-order-logo.svg">
+                <p class="fs-5">開發全新的服務系統並不容易，但只要有全面的系統開發能力，配合上高效能的硬體設備，
+                    在這樣的合作下，相信我們必定能取得完美的成果。</p>
+            </div>
+            <div class="col-2 d-flex flex-column justify-content-center align-items-center">
+                <p class="mb-0">2022</p>
+                <div style="width: 1.5px;" class="bg-dark Partner-line"></div>
+                <p class="mb-0">Now</p>
+            </div>
+            <div class="col-5">
+                <div class="d-flex flex-column align-items-center">
+                    <img class="w-75" src="image/pos.png">
+                    <p class="fs-5">自助點餐系統</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Winner-ERP-->
+    <div class="container my-5">
+        <div class="row d-flex align-items-center justify-content-between">
+            <div class="col-6 col-md-5">
+                <img class="w-25" src="image/erp-qrcode.png">
+                <p class="fs-1 fw-bold mb-2 mb-md-5">Winner ERP</p>
+                <p class="fs-5 fw-bold mb-1">企業無後顧之憂的絕佳利器 !</p>
+                <p class="fs-5">用不到的功能不收錢！依照公司業務性質專屬客製，讓錢用在刀口上！
+                    不用冗長等待，針對核心需求進行客製化開發，階段性導入，一有問題立即改善！</p>
+            </div>
+            <div class="col-6 col-md-5">
+                <div class="d-flex flex-column align-items-center">
+                    <p class="mb-0">2021</p>
+                    <div style="width: 1.5px;" class="bg-dark project-line"></div>
+                    <img class="w-100" src="image/ERP-banner.png">
+                    <div style="width: 1.5px;" class="bg-dark project-line"></div>
+                </div>
+                <div class="d-flex flex-column">
+                    <p class="fs-5 fw-bold mb-1">成功導入</p>
+                    <p class="fs-5">宥博企業有限公司 Unicombo (自行車貿易業)
+                        佳葵農產品有限公司 (果菜批發業)</p>
+                    <p class="fs-5 fw-bold mb-1 text-color-1">用心傾聽客戶需求</p>
+                    <p class="fs-5">只要您願意踏入 e 化平台，我們有信心讓系統，高效改善企業的作業流程。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Winner-Catchr-->
+    <div class="container my-5">
+        <div class="row d-flex align-items-center justify-content-between">
+            <div class="col-6 col-md-5">
+                <img class="w-25" src="">
+                <p class="fs-1 fw-bold mb-2 mb-md-5">Winner Catchr</p>
+                <p class="fs-5 fw-bold mb-1">行動裝置普及後該如何保障使用安全?</p>
+                <p class="fs-5">不論是公司配發或是員工自帶的智慧型手機、平板電腦，都可以透過 Winner Catchr 智能捕手把關行動裝置的安全管理，提供全方位管理項目。</p>
+            </div>
+            <div class="col-6 col-md-5">
+                <div class="d-flex flex-column align-items-center">
+                    <p class="mb-0">2022</p>
+                    <div style="width: 1.5px;" class="bg-dark project-line"></div>
+                    <img class="w-100" src="image/Catchr-banner.png">
+                    <div style="width: 1.5px;" class="bg-dark project-line"></div>
+                </div>
+                <div class="d-flex flex-column">
+                    <p class="fs-5 fw-bold mb-1">適用產業</p>
+                    <p class="fs-5">製造業、零售業、運輸業、電器維修、醫療照護、教育機構</p>
+                    <p class="fs-5fw-bold mb-1 text-color-1">Google EMM 夥伴</p>
+                    <p class="fs-5">全台第四間通過 Google 認證－企業行動管理 (EMM) 供應商。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Winner-NFT-->
+    <div class="container my-5">
+        <div class="row d-flex align-items-center justify-content-between">
+            <div class="col-6 col-md-5">
+                <img class="w-25" src="image/NFT-QRcode.png">
+                <p class="fs-1 fw-bold mb-2 mb-md-5">Winner NFT</p>
+                <p class="fs-5 mb-1 fw-bold text-color-1">全球首推！Golden Tiger RE - 金虎福運紅包</p>
+                <p class="fs-5">2022 年也是華人文化的「虎」年，我們期待透過
+                    Golden Tiger RE 紅包的福氣，讓全球朋友們一同分享這份福運與喜氣，揮別疫情陰霾迎向正常的生活。</p>
+            </div>
+            <div class="col-6 col-md-5">
+                <div class="d-flex flex-column align-items-center">
+                    <p class="mb-0">2021</p>
+                    <div style="width: 1.5px;" class="bg-dark project-line"></div>
+                    <img class="w-100" src="image/NFT-banner.jpg">
+                    <div style="width: 1.5px;" class="bg-dark project-line"></div>
+                </div>
+                <div class="d-flex flex-column">
+                    <p class="fs-5 fw-bold mb-1>發行平台</p>
+                    <p class="fs-5">Opensea 及 Oursong 皆有上架！</p>
+                    <p class="fs-5 fw-bold mb-1 text-color-1">區塊鏈技術及應用</p>
+                    <p class="fs-5">致力成為百年企業，必須不斷與時俱進，掌握時代的脈動，
+                        以及未來的趨勢與技術。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--artribr-team-->
+    <div class="container my-5">
+        <div class="row d-flex align-items-center">
+            <div class="col-5">
+                <p class="fs-1 mb-0 fw-bold">Together in Excellence!</p>
+                <p class="fs-5">新的挑戰、新的計劃，不怕克服每個挑戰。
+                    持續超越自己，才能不斷往前走下去，追求更加卓越的自己。</p>
+            </div>
+            <div class="col-2 d-flex flex-column justify-content-center align-items-center">
+                <p class="mb-0 text-center">Artribr</p>
+                <div style="width: 1.5px;" class="bg-dark Partner-line"></div>
+                <p class="mb-0">Now</p>
+            </div>
+            <div class="col-5">
+                <img class="w-100" src="image/artribr-team.png">
+            </div>
+        </div>
+    </div>
+    <!--to be continued-->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col d-flex flex-column align-items-center">
+                <p class="fs-1 mb-2 fw-bold">To Be Continued</p>
+                <img class="w-100 mb-3" src="image/to-be-continued.png">
+                <p class="fs-5">讓不起眼的角落，享有<span class="text-color-2">科技的照耀</span></p>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="bg-black py-4 px-2">
+    <div class="container">  
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <a href="https://www.artribr.com/">
+                <img class="w-50 mb-3" src="image/logo-white.svg" target="_blank" alt="Artribr官網連結">
+              </a>
+            </div>
+            <div class="col-12 col-md-5 mb-4 mb-md-0 text-white">
+              <p class="fs-10 mb-2 mb-md-3 fw-light">台中市西區精誠路 316 號 2F</p>
+              <p class="fs-10 mb-2 mb-md-3 fw-light">winnercatchr.service@gmail.com</p>
+              <p class="fs-10 mb-2 mb-md-3 fw-light">(+886) 958372919</p>
+              <p class="fs-10 fw-light">(04) 2039-58365</p>
+            </div>
+            <div class="cpl-12 col-md-3 mb-2">
+              <a class="text-decoration-none" href="https://winner-erp.com/" target="_blank" style="color:white">
+                <p class="fs-10 text-white fw-light mb-2 mb-md-3">ERP 系統</p> 
+              </a>
+              <a class="text-decoration-none" href="https://www.facebook.com/WinnerNFT/ target="_blank" style="color:white">
+                <p class="fs-10 text-white fw-light mb-2 mb-md-3">Winner NFT</p> 
+              </a>
+            </div>
+          </div>
+    </div>
+    </div>
+    <!--右側按鈕-->
+    <div class="d-flex flex-column bottom-0 end-0 position-fixed z-index">
+    <a type="button" role="button" class="w-100 support-btn text-decoration-none" href="#">
+        <img class="mb-3 me-2 mb-md-3 me-md-3" src="image/gotop-icon.svg" alt="回到頂端">
+    </a>
+  </div>
 <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

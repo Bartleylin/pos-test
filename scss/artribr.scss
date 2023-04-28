@@ -1,0 +1,178 @@
+@import "bootstrap.min";
+
+html, body {
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+*,
+*::before,
+*::after {
+ box-sizing: border-box;
+}
+
+
+.txt-line-clamp{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.fs-1{
+    @media (min-width: 315px){
+      font-size: 1.375rem!important;
+    }
+    @media (min-width: 576px){
+        font-size: 2.1875rem !important;
+    }
+    @media (min-width: 768px){
+        font-size: 2.5rem !important;
+    }
+    @media (min-width: 992px){
+        font-size: 2.75rem !important;
+    }
+    @media (min-width: 1200px){
+        font-size: 3.25rem !important;
+    }
+    @media (min-width: 1400px){
+        font-size: 3.875rem !important;
+    }
+}
+.fs-2{
+    @media (min-width: 315px){
+        font-size: 1.125rem!important;
+    }
+    @media (min-width: 576px){
+        font-size: 1.625rem !important;
+    }
+    @media (min-width: 768px){
+        font-size: 2.1875rem!important;
+    }
+    @media (min-width: 992px){
+        font-size: 2.5rem!important;
+    }
+    @media (min-width: 1200px){
+        font-size: 2.75rem !important;
+    }
+    @media (min-width: 1400px){
+        font-size: 3.25rem !important;
+    }
+}
+.fs-3{
+    @media (min-width: 315px){
+        font-size: 0.9375rem !important;
+    }
+    @media (min-width: 576px){
+        font-size:  1.125rem!important;
+    }
+    @media (min-width: 768px){
+        font-size:  1.375rem!important;
+    }
+    @media (min-width: 992px){
+        font-size: 1.875rem!important;
+    }
+    @media (min-width: 1200px){
+        font-size: 2.1875rem !important;
+    }
+    @media (min-width: 1400px){
+        font-size: 2.75rem  !important;
+    }
+}
+.fs-4{
+    @media (min-width: 315px){
+        font-size: 0.8125rem !important;
+    }
+    @media (min-width: 576px){
+        font-size:  0.9375rem !important;
+    }
+    @media (min-width: 768px){
+        font-size:  1.125rem !important;
+    }
+    @media (min-width: 992px){
+        font-size: 1.375rem !important;
+    }
+    @media (min-width: 1200px){
+        font-size: 1.5rem !important;
+    }
+    @media (min-width: 1400px){
+        font-size: 1.8rem !important;
+    }
+}
+.fs-5{
+    @media (min-width: 315px){
+        font-size: 0.4375rem !important;
+    }
+    @media (min-width: 576px){
+        font-size:  0.5625rem !important;
+    }
+    @media (min-width: 768px){
+        font-size:  0.8125rem !important;
+    }
+    @media (min-width: 992px){
+        font-size: 0.9375rem !important;
+    }
+    @media (min-width: 1200px){
+        font-size: 1.125rem  !important;
+    }
+    @media (min-width: 1400px){
+        font-size: 1.5rem !important;
+    }
+}
+
+.fs-6{
+    @media (min-width: 315px){
+        font-size: 2.5rem !important;
+    }
+}
+
+.fs-7{
+    font-size: 1.5rem !important;
+}
+
+
+.page-height{
+    @media (min-width: 768px){
+        height: 100vh;
+    }
+}
+
+.cooperate-1{
+    background-color: #D6EFFA;
+}
+.cooperate-2{
+    background-color: #F8F9E0;
+}
+
+.text-color-1{
+    color: #CB1010;
+}
+.text-color-2{
+    color: #38B6FF;
+}
+
+.Partner-line{
+    @media (min-width: 350px){
+        height: 200px;
+    }
+    @media (min-width: 576px){
+        height: 300px;
+    }
+    @media (min-width: 992px){
+        height: 450px;
+    }
+}
+.project-line{
+    @media (min-width: 350px){
+        height: 15px;
+    }
+    @media (min-width: 576px){
+        height: 20px;
+    }
+    @media (min-width: 992px){
+        height: 50px;
+    }
+}

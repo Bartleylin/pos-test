@@ -16,3 +16,7 @@ $(".popup-btn").click(function() {
     $(".popup-box").removeClass("transform-in").addClass("transform-out");
     event.preventDefault();
   }
+  $('Modal').modal({
+    backdrop: 'static',
+    keyboard: false
+  })
