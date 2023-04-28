@@ -10474,12 +10474,7 @@ body::-webkit-scrollbar {
 
 @media (min-width: 315px) {
   .fs-5 {
-    font-size: 0.4375rem !important;
-  }
-}
-@media (min-width: 576px) {
-  .fs-5 {
-    font-size: 0.5625rem !important;
+    font-size: 0.6rem !important;
   }
 }
 @media (min-width: 768px) {
